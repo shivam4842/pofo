@@ -135,6 +135,31 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+
+// vertical tabs 
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+            tablinks[i].classList.remove("text-rose-600", "after:block", "after:w-48", "after:h-[3px]", "after:bg-rose-600", "after:mt-4", "active:text-rose-600", "transition-all", "duration-150", "ease-in-out", "transform", "translate-x-0");
+        }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+
+     // Add the active styling to the clicked tab
+     evt.currentTarget.classList.add("text-rose-600", "after:block", "after:w-48", "after:h-[3px]", "after:bg-rose-600","after:mt-4", "active:text-rose-600", "transition-all", "duration-150", "ease-in-out", "transform", "translate-x-4");
+
+}
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  const firstTab = document.getElementsByClassName('tablinks')[0];
+  firstTab.click();
+});
     </script>
 </body>
 </html>

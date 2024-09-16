@@ -188,4 +188,48 @@
     </div>
 </section>
 
+<section class="py-20 md:py-28 lg:py-40 bg-black/85 px-2.5 sm:px-20 md:px-10">
+    <div class="lg:max-w-6xl mx-auto">
+        <div class="relative">
+            <div class="absolute -left-40 z-30 flex flex-col items-start gap-8 h-full justify-center">
+                <button class="tablinks text-2xl text-stone-400/65 hover:text-rose-600" onclick="openCity(event, 'tab-1')">Tailoring interior</button>
+                <button class="tablinks text-2xl text-stone-400/65 hover:text-rose-600" onclick="openCity(event, 'tab-2')">Skoda corporate</button>
+                <button class="tablinks text-2xl text-stone-400/65 hover:text-rose-600" onclick="openCity(event, 'tab-3')">Daimler financial</button>
+                <button class="tablinks text-2xl text-stone-400/65 hover:text-rose-600" onclick="openCity(event, 'tab-4')">Basket shopping</button>
+                <button class="tablinks text-2xl text-stone-400/65 hover:text-rose-600" onclick="openCity(event, 'tab-5')">Beautiful women</button>
+                <button class="tablinks text-2xl text-stone-400/65 hover:text-rose-600" onclick="openCity(event, 'tab-6')">Feather pharmacy</button>
+                <button class="tablinks text-2xl text-stone-400/65 hover:text-rose-600" onclick="openCity(event, 'tab-7')">Sherpa identity</button>
+            </div>
+
+            <div id="tab-1" class="tabcontent">
+                <img src="{{ asset('images/Tailoring-interior.jpg') }}" alt="" class="w-fit">
+            </div>
+
+            <div id="tab-2" class="tabcontent">
+                <img src="{{ asset('images/Skoda-corporate.jpg') }}" alt="">
+            </div>
+
+            <div id="tab-3" class="tabcontent">
+                <img src="{{ asset('images/Daimler-financial.jpg') }}" alt="">
+            </div>
+
+            <div id="tab-4" class="tabcontent">
+                <img src="{{ asset('images/Basket-shopping.jpg') }}" alt="">
+            </div>
+
+            <div id="tab-5" class="tabcontent">
+                <img src="{{ asset('images/beautiful-women.jpg') }}" alt="">
+            </div>
+
+            <div id="tab-6" class="tabcontent">
+                <img src="{{ asset('images/feather-pharmacy.jpg') }}" alt="">
+            </div>
+
+            <div id="tab-7" class="tabcontent">
+                <img src="{{ asset('images/sherpa-identity.jpg') }}" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
 @endsection
