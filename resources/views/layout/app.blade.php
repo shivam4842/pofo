@@ -146,13 +146,14 @@ function openCity(evt, cityName) {
     tablinks = document.getElementsByClassName("tablinks");
         for (i = 0; i < tablinks.length; i++) {
             tablinks[i].className = tablinks[i].className.replace(" active", "");
-            tablinks[i].classList.remove("text-rose-600", "after:block", "after:w-48", "after:h-[3px]", "after:bg-rose-600", "after:mt-4", "active:text-rose-600", "transition-all", "duration-150", "ease-in-out", "transform", "translate-x-0");
+            tablinks[i].classList.remove("text-rose-600", "after:block", "after:w-80", "lg:after:w-56", "after:h-[3px]", "after:bg-rose-600", "after:mt-3", "after:-translate-x-6", "active:text-rose-600", "transition-all", "duration-150", "ease-in-out", "transform","sm:translate-x-6", "lg:translate-x-6");
+            tablinks[i].classList.add("transition-all", "duration-150", "ease-in-out", "transform", "translate-x-0"); // Return tab to original position
         }
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
 
-     // Add the active styling to the clicked tab
-     evt.currentTarget.classList.add("text-rose-600", "after:block", "after:w-48", "after:h-[3px]", "after:bg-rose-600","after:mt-4", "active:text-rose-600", "transition-all", "duration-150", "ease-in-out", "transform", "translate-x-4");
+    // Add the active styling to the clicked tab
+    evt.currentTarget.classList.add("text-rose-600", "after:block", "after:w-80", "lg:after:w-56", "after:h-[3px]", "after:bg-rose-600","after:mt-3", "lg:after:-translate-x-6", "active:text-rose-600", "transition-all", "duration-150", "ease-in-out", "transform","sm:translate-x-6", "lg:translate-x-6");
 
 }
 
