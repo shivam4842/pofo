@@ -8,6 +8,9 @@
     <link rel="icon" href="{{ asset('images/favicon.png') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
+
     <!-- Styles -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
@@ -17,6 +20,7 @@
         @include('layout.footer')
 
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
     <script>
 var cont = 0;
@@ -160,6 +164,34 @@ function openCity(evt, cityName) {
 document.addEventListener('DOMContentLoaded', (event) => {
   const firstTab = document.getElementsByClassName('tablinks')[0];
   firstTab.click();
+});
+
+
+// logo slider
+$(document).ready(function () {
+  $(".logo-slider").slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: false,
+    dots: false,
+    pauseOnHover: false,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 520,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
 });
     </script>
 </body>
