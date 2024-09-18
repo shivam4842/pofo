@@ -201,31 +201,31 @@
                 <button class="tablinks text-lg lg:text-[25px] hover:text-rose-600" onclick="openCity(event, 'tab-7')">Sherpa identity</button>
             </div>
 
-            <div id="tab-1" class="tabcontent">
+            <div id="tab-1" class="tabcontent transform opacity-0 transition-all duration-500 ease-in-out">
                 <img src="{{ asset('images/Tailoring-interior.jpg') }}" alt="" class="lg:w-11/12 lg:mx-auto xl:w-full">
             </div>
 
-            <div id="tab-2" class="tabcontent">
+            <div id="tab-2" class="tabcontent transform opacity-0 transition-all duration-500 ease-in-out">
                 <img src="{{ asset('images/Skoda-corporate.jpg') }}" alt="" class="lg:w-11/12 lg:mx-auto xl:w-full">
             </div>
 
-            <div id="tab-3" class="tabcontent">
+            <div id="tab-3" class="tabcontent transform opacity-0 transition-all duration-500 ease-in-out">
                 <img src="{{ asset('images/Daimler-financial.jpg') }}" alt="" class="lg:w-11/12 lg:mx-auto xl:w-full">
             </div>
 
-            <div id="tab-4" class="tabcontent">
+            <div id="tab-4" class="tabcontent transform opacity-0 transition-all duration-500 ease-in-out">
                 <img src="{{ asset('images/Basket-shopping.jpg') }}" alt="" class="lg:w-11/12 lg:mx-auto xl:w-full">
             </div>
 
-            <div id="tab-5" class="tabcontent">
+            <div id="tab-5" class="tabcontent transform opacity-0 transition-all duration-500 ease-in-out">
                 <img src="{{ asset('images/beautiful-women.jpg') }}" alt="" class="lg:w-11/12 lg:mx-auto xl:w-full">
             </div>
 
-            <div id="tab-6" class="tabcontent">
+            <div id="tab-6" class="tabcontent transform opacity-0 transition-all duration-500 ease-in-out">
                 <img src="{{ asset('images/feather-pharmacy.jpg') }}" alt="" class="lg:w-11/12 lg:mx-auto xl:w-full"> 
             </div>
 
-            <div id="tab-7" class="tabcontent">
+            <div id="tab-7" class="tabcontent transform opacity-0 transition-all duration-500 ease-in-out">
                 <img src="{{ asset('images/sherpa-identity.jpg') }}" alt="" class="lg:w-11/12 lg:mx-auto xl:w-full">
             </div>
         </div>

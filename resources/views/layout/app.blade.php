@@ -30,24 +30,24 @@ function loopSlider() {
     xx = setInterval(function() {
         switch (cont) {
             case 0: {
-                $("#slider-1").fadeOut(400);
-                $("#slider-2").delay(400).fadeIn(400);
+                $("#slider-1 .bg-img").fadeOut(400);
+                $("#slider-2 .bg-img").delay(400).fadeIn(400);
                 $("#sButton1").removeClass("bg-white");
                 $("#sButton2").addClass("bg-white");
                 cont = 1;
                 break;
             }
             case 1: {
-                $("#slider-2").fadeOut(400);
-                $("#slider-3").delay(400).fadeIn(400);
+                $("#slider-2 .bg-img").fadeOut(400);
+                $("#slider-3 .bg-img").delay(400).fadeIn(400);
                 $("#sButton2").removeClass("bg-white");
                 $("#sButton3").addClass("bg-white");
                 cont = 2;
                 break;
             }
             case 2: {
-                $("#slider-3").fadeOut(400);
-                $("#slider-1").delay(400).fadeIn(400);
+                $("#slider-3 .bg-img").fadeOut(400);
+                $("#slider-1 .bg-img").delay(400).fadeIn(400);
                 $("#sButton3").removeClass("bg-white");
                 $("#sButton1").addClass("bg-white");
                 cont = 0;
@@ -94,6 +94,8 @@ $(window).ready(function() {
     $("#sButton1").addClass("bg-white");
     loopSlider();
 });
+
+
 
 // hamburger menu
 document.addEventListener('DOMContentLoaded', function () {
@@ -143,28 +145,53 @@ document.addEventListener("DOMContentLoaded", () => {
 // vertical tabs 
 function openCity(evt, cityName) {
     var i, tabcontent, tablinks;
+    
+    // Get all tab contents and hide them with transition
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].classList.add("opacity-0");
+        tabcontent[i].classList.remove("opacity-100");
+        tabcontent[i].classList.add("duration-300");
         tabcontent[i].style.display = "none";
     }
+
+    // Remove active class and styles from all tabs
     tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-            tablinks[i].classList.remove("text-rose-600", "after:block", "after:w-80", "lg:after:w-56", "after:h-[3px]", "after:bg-rose-600", "after:mt-3", "after:-translate-x-6", "active:text-rose-600", "transition-all", "duration-150", "ease-in-out", "transform","sm:translate-x-6", "lg:translate-x-6");
-            tablinks[i].classList.add("transition-all", "duration-150", "ease-in-out", "transform", "translate-x-0"); // Return tab to original position
-        }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+        tablinks[i].classList.remove(
+            "text-rose-600", "after:block", "after:w-80", "lg:after:w-56", 
+            "after:h-[3px]", "after:bg-rose-600", "after:mt-3", "after:-translate-x-6",
+            "active:text-rose-600", "transition-all", "duration-150", "ease-in-out", 
+            "transform", "sm:translate-x-6", "lg:translate-x-6"
+        );
+        tablinks[i].classList.add("transition-all", "duration-150", "ease-in-out", "transform", "translate-x-0");
+    }
+
+    // Display the active tab content with transition
+    const activeTab = document.getElementById(cityName);
+    activeTab.style.display = "block";
+    setTimeout(() => {
+        activeTab.classList.remove("opacity-0");
+        activeTab.classList.add("opacity-100");
+    }, 10); // A small delay to ensure display change is applied
 
     // Add the active styling to the clicked tab
-    evt.currentTarget.classList.add("text-rose-600", "after:block", "after:w-80", "lg:after:w-56", "after:h-[3px]", "after:bg-rose-600","after:mt-3", "lg:after:-translate-x-6", "active:text-rose-600", "transition-all", "duration-150", "ease-in-out", "transform","sm:translate-x-6", "lg:translate-x-6");
-
+    evt.currentTarget.className += " active";
+    evt.currentTarget.classList.add(
+        "text-rose-600", "after:block", "after:w-80", "lg:after:w-56", 
+        "after:h-[3px]", "after:bg-rose-600", "after:mt-3", "lg:after:-translate-x-6",
+        "active:text-rose-600", "transition-all", "duration-150", "ease-in-out", 
+        "transform", "sm:translate-x-6", "lg:translate-x-6"
+    );
 }
 
+// Automatically click the first tab on page load
 document.addEventListener('DOMContentLoaded', (event) => {
-  const firstTab = document.getElementsByClassName('tablinks')[0];
-  firstTab.click();
+    const firstTab = document.getElementsByClassName('tablinks')[0];
+    firstTab.click();
 });
+
 
 
 // logo slider
