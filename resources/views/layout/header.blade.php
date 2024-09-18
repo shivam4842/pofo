@@ -50,9 +50,9 @@
         </div>
     </header>
     <div id="slider-1" class="h-full">
-        <div class="bg-[url('/public/images/homepage1.jpg')] bg-center sm:bg-cover md:bg-left lg:bg-right flex flex-col items-start justify-end md:justify-center h-full">
+        <div class="bg-[url('/public/images/homepage1.jpg')] bg-center sm:bg-cover md:bg-left xl:bg-right flex flex-col items-start justify-end md:justify-center h-full">
             <img src="{{ asset('images/homepage-option1.jpg') }}" alt="" class="md:w-1/2 lg:w-1/5 h-full hidden sm:block sm:absolute sm:left-36  md:static">
-            <div class="bg-white absolute top-80 sm:top-20 md:top-auto left-8  sm:left-40 lg:left-52 p-8 lg:p-20 pb-8  lg:pl-24 w-10/12 sm:w-1/2 md:w-7/12 lg:w-1/3 text-center lg:text-left">
+            <div class="bg-white absolute top-80 sm:top-20 md:top-auto left-8  sm:left-40 lg:left-11 xl:left-52 p-8 lg:p-20 pb-8  lg:pl-24 w-10/12 sm:w-1/2 md:w-7/12 lg:w-3/5 xl:w-1/3 text-center lg:text-left">
                 <span class="underline text-red-600 uppercase text-xs lg:text-sm font-semibold tracking-wider font-montserrat ">Good design is honest</span>
                 <h1 class="text-neutral-800 text-3xl lg:text-[55px] leading-tight lg:leading-none text-balance pt-4 -tracking-wider pb-16 lg:pb-10  font-montserrat font-medium">We move the <span class="font-bold">digital industry</span></h1>
                 <a href="#" class="font-montserrat font-bold uppercase text-xs absolute bottom-8 lg:bottom-0 right-1/4 md:right-1/3 lg:right-0 py-3 px-5 lg:py-5 lg:px-9 bg-black text-white">Project details</a>
@@ -60,9 +60,9 @@
         </div>
     </div>
     <div id="slider-2" class="h-full">
-        <div class="bg-[url('/public/images/homepage2.jpg')] bg-center sm:bg-cover md:bg-left lg:bg-right flex flex-col items-start justify-end md:justify-center h-full">
+        <div class="bg-[url('/public/images/homepage2.jpg')] bg-center sm:bg-cover md:bg-left xl:bg-right flex flex-col items-start justify-end md:justify-center h-full">
             <img src="{{ asset('images/homepage-option2.jpg') }}" alt="" class="md:w-1/2 lg:w-1/5 h-full hidden sm:block sm:absolute sm:left-36 md:static">
-            <div class="bg-white absolute top-80 sm:top-20 md:top-auto left-8 sm:left-40 lg:left-52 p-8 lg:p-20 pb-8 lg:pl-24 w-10/12 sm:w-1/2 md:w-7/12 lg:w-1/3 text-center lg:text-left">
+            <div class="bg-white absolute top-80 sm:top-20 md:top-auto left-8 sm:left-40 lg:left-11 xl:left-52 p-8 lg:p-20 pb-8 lg:pl-24 w-10/12 sm:w-1/2 md:w-7/12 lg:w-3/5 xl:w-1/3 text-center lg:text-left">
                 <span class="underline text-orange-600 uppercase text-xs lg:text-sm font-semibold tracking-wider font-montserrat">Good design is honest</span>
                 <h1 class="text-neutral-800 text-3xl lg:text-[55px] leading-tight lg:leading-none text-balance pt-4 -tracking-wider pb-16 lg:pb-10  font-montserrat font-medium">We do things <span class="font-bold">differently</span></h1>
                 <a href="#" class="font-montserrat font-bold uppercase text-xs absolute bottom-8 lg:bottom-0 right-1/4 md:right-1/3 lg:right-0 py-3 px-5 lg:py-5 lg:px-9 bg-black text-white">Project details</a>
@@ -70,9 +70,9 @@
         </div>
     </div>
     <div id="slider-3" class="h-full">
-        <div class="bg-[url('/public/images/homepage3.jpg')] bg-center sm:bg-cover md:bg-left lg:bg-right flex flex-col items-start justify-end md:justify-center h-full">
+        <div class="bg-[url('/public/images/homepage3.jpg')] bg-center sm:bg-cover md:bg-left xl:bg-right flex flex-col items-start justify-end md:justify-center h-full">
             <img src="{{ asset('images/homepage-option3.jpg') }}" alt="" class="md:w-1/2 lg:w-1/5 h-full hidden sm:block sm:absolute sm:left-36 md:static">
-            <div class="bg-white absolute top-80 sm:top-20 md:top-auto left-8 sm:left-40 lg:left-52 p-8 lg:p-20 pb-8 lg:pl-24 w-10/12 sm:w-1/2 md:w-7/12 lg:w-1/3 text-center lg:text-left">
+            <div class="bg-white absolute top-80 sm:top-20 md:top-auto left-8 sm:left-40 lg:left-11 xl:left-52 p-8 lg:p-20 pb-8 lg:pl-24 w-10/12 sm:w-1/2 md:w-7/12 lg:w-3/5 xl:w-1/3 text-center lg:text-left">
                 <span class="underline text-[#C92C0C] uppercase text-xs lg:text-sm font-semibold tracking-wider font-montserrat">Good design is honest</span>
                 <h1 class="text-neutral-800 text-3xl lg:text-[55px] leading-tight lg:leading-none text-balance pt-4 -tracking-wider pb-16 lg:pb-10  font-montserrat font-medium">We move the, <span class="font-bold">but significant</span></h1>
                 <a href="#" class="font-montserrat font-bold uppercase text-xs absolute bottom-8 lg:bottom-0 right-1/4 md:right-1/3 lg:right-0 py-3 px-5 lg:py-5 lg:px-9 bg-black text-white">Project details</a>

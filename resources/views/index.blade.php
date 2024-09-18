@@ -2,14 +2,14 @@
 
 @section('content')
 
-<section class="py-14 md:py-20  lg:py-28 px-2.5 sm:px-20 md:px-10 lg:px-0"> 
+<section class="py-14 md:py-20  lg:py-28 px-2.5 sm:px-20 md:px-10 xl:px-0"> 
     <div class="lg:max-w-6xl mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-2">  
             <div class="font-montserrat md:pr-60 lg:pr-20">
                 <span class="text-rose-600 text-sm font-medium">Handcrafted Templates</span>
-                <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-[40px] lg:leading-[46px] text-balance font-semibold py-3 after:block after:w-9 after:h-[3px] after:bg-rose-600 after:mt-4 lg:after:mt-6">Perfect powerful theme for creatives designer people.</h2>
+                <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[40px] lg:leading-[46px] text-balance font-semibold py-3 after:block after:w-9 after:h-[3px] after:bg-rose-600 after:mt-4 lg:after:mt-6">Perfect powerful theme for creatives designer people.</h2>
             </div>
-            <div class="lg:pl-6">
+            <div class="xl:pl-6">
                 <p class="pt-6 lg:pt-12 text-lg">Beautiful and easy to use UI, professional animations and drag and drop feature with unique digital experiences</p>
                 <p class="pt-6 pb-8 lg:pb-10 text-gray-500 leading-7">With years of experience in the website design and development industry ThemeZaa pride ourselves on creating unique, creative and quality designs that are developed upon the latest modern coding and developing techniques, which are then built using the most up to date, structured coding framework so that your development team can take it to the next level with ease.</p>
                 <ul class="flex flex-col sm:flex-row space-y-2 sm:space-x-16 items-start sm:items-center  uppercase font-medium text-sm">
@@ -23,7 +23,7 @@
 </section>
 
 <section>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         <div class="group relative overflow-hidden">
             <a href="#">
                 <img class="w-full object-cover transition-all duration-300 ease-in-out group-hover:scale-110 group-hover:blur-sm" src="{{ asset('images/portfolio-1.jpg') }}">
@@ -82,7 +82,7 @@
     </div>
 </section>
 
-<section class="py-20 md:py-28 lg:py-40 px-2.5 sm:px-20 md:px-10 lg:px-0">
+<section class="py-20 md:py-28 lg:py-40 px-2.5 sm:px-20 md:px-10 xl:px-0">
     <div class="lg:max-w-6xl mx-auto">
         <div class="md:w-11/12 lg:w-8/12 pb-10 md:pb-14 lg:pb-24">   
             <h2 class="text-xl md:text-2xl lg:text-3xl">We always stay on the cutting edge of digital, so that our clients maintain their competitive advantage online. We have our own developers and technical producers.</h2>
@@ -126,37 +126,37 @@
     </div>
 </section>
 
-<section class="py-20 md:py-28 lg:py-40 bg-black/85 px-2.5 sm:px-20 md:px-10 lg:px-0">
+<section class="py-20 md:py-28 lg:py-40 bg-black/85 px-2.5 sm:px-20 md:px-10 xl:px-0">
     <div class="lg:max-w-6xl mx-auto">
         <span class="text-stone-400 uppercase text-sm font-medium">What we'll do</span>
         <h2 class="text-white text-xl lg:text-3xl pt-1">We are the australia award winning creative agency</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-3 gap-10 lg:gap-24 pt-10 lg:pt-24">
-            <div class="md:pr-10 lg:pr-14">
+            <div class="md:pr-10 lg:pr-2 xl:pr-14">
                 <i class="fa-solid fa-desktop text-stone-400 text-4xl"></i>
                 <h3 class="text-white pt-4 pb-3 font-semibold font-montserrat text-sm">Web Development</h3>
                 <p class="text-stone-400 text-sm leading-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy text.</p>
             </div>
-            <div class="md:pr-10 lg:pr-14">
+            <div class="md:pr-10 lg:pr-2 xl:pr-14">
                 <i class="fa-solid fa-pen-ruler text-stone-400 text-4xl"></i>
                 <h3 class="text-white pt-4 pb-3 font-semibold font-montserrat text-sm">Logo & Identity</h3>
                 <p class="text-stone-400 text-sm leading-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy text.</p>
             </div>
-            <div class="md:pr-10 lg:pr-14">
+            <div class="md:pr-10 lg:pr-2 xl:pr-14">
                 <i class="fa-solid fa-parachute-box text-stone-400 text-4xl"></i>
                 <h3 class="text-white pt-4 pb-3 font-semibold font-montserrat text-sm">Graphics Design</h3>
                 <p class="text-stone-400 text-sm leading-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy text.</p>
             </div>
-            <div class="md:pr-10 lg:pr-14">
+            <div class="md:pr-10 lg:pr-2 xl:pr-14">
                 <i class="fa-solid fa-bullseye text-stone-400 text-4xl"></i>
                 <h3 class="text-white pt-4 pb-3 font-semibold font-montserrat text-sm">App Development</h3>
                 <p class="text-stone-400 text-sm leading-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy text.</p>
             </div>
-            <div class="md:pr-10 lg:pr-14">
+            <div class="md:pr-10 lg:pr-2 xl:pr-14">
                 <i class="fa-solid fa-scissors text-stone-400 text-4xl"></i>
                 <h3 class="text-white pt-4 pb-3 font-semibold font-montserrat text-sm">Social Marketing</h3>
                 <p class="text-stone-400 text-sm leading-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy text.</p>
             </div>
-            <div class="md:pr-10 lg:pr-14">
+            <div class="md:pr-10 lg:pr-2 xl:pr-14">
                 <i class="fa-solid fa-laptop text-stone-400 text-4xl"></i>
                 <h3 class="text-white pt-4 pb-3 font-semibold font-montserrat text-sm">Content Creation</h3>
                 <p class="text-stone-400 text-sm leading-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy text.</p>
@@ -188,10 +188,10 @@
     </div>
 </section>
 
-<section class="py-20 md:py-28 lg:py-40 bg-black/85 px-2.5 sm:px-20 md:px-10">
+<section class="py-20 md:py-28 lg:py-40 bg-black/85 px-2.5 sm:px-20 md:px-10 xl:px-0">
     <div class="lg:max-w-7xl mx-auto">
         <div class="relative">
-            <div class="static sm:absolute sm:-left-28 z-30 flex flex-col items-center lg:items-start gap-4 lg:gap-8  h-full justify-center text-stone-400/65 mb-6">
+            <div class="static sm:absolute sm:-left-28 lg:left-0 2xl:-left-28 z-30 flex flex-col items-center lg:items-start gap-4 xl:gap-8  h-full justify-center text-stone-400/65 mb-6">  
                 <button class="tablinks text-lg lg:text-[25px] hover:text-rose-600" onclick="openCity(event, 'tab-1')">Tailoring interior</button>
                 <button class="tablinks text-lg lg:text-[25px] hover:text-rose-600" onclick="openCity(event, 'tab-2')">Skoda corporate</button>
                 <button class="tablinks text-lg lg:text-[25px] hover:text-rose-600" onclick="openCity(event, 'tab-3')">Daimler financial</button>
@@ -202,31 +202,31 @@
             </div>
 
             <div id="tab-1" class="tabcontent">
-                <img src="{{ asset('images/Tailoring-interior.jpg') }}" alt="">
+                <img src="{{ asset('images/Tailoring-interior.jpg') }}" alt="" class="lg:w-11/12 lg:mx-auto xl:w-full">
             </div>
 
             <div id="tab-2" class="tabcontent">
-                <img src="{{ asset('images/Skoda-corporate.jpg') }}" alt="">
+                <img src="{{ asset('images/Skoda-corporate.jpg') }}" alt="" class="lg:w-11/12 lg:mx-auto xl:w-full">
             </div>
 
             <div id="tab-3" class="tabcontent">
-                <img src="{{ asset('images/Daimler-financial.jpg') }}" alt="">
+                <img src="{{ asset('images/Daimler-financial.jpg') }}" alt="" class="lg:w-11/12 lg:mx-auto xl:w-full">
             </div>
 
             <div id="tab-4" class="tabcontent">
-                <img src="{{ asset('images/Basket-shopping.jpg') }}" alt="">
+                <img src="{{ asset('images/Basket-shopping.jpg') }}" alt="" class="lg:w-11/12 lg:mx-auto xl:w-full">
             </div>
 
             <div id="tab-5" class="tabcontent">
-                <img src="{{ asset('images/beautiful-women.jpg') }}" alt="">
+                <img src="{{ asset('images/beautiful-women.jpg') }}" alt="" class="lg:w-11/12 lg:mx-auto xl:w-full">
             </div>
 
             <div id="tab-6" class="tabcontent">
-                <img src="{{ asset('images/feather-pharmacy.jpg') }}" alt=""> 
+                <img src="{{ asset('images/feather-pharmacy.jpg') }}" alt="" class="lg:w-11/12 lg:mx-auto xl:w-full"> 
             </div>
 
             <div id="tab-7" class="tabcontent">
-                <img src="{{ asset('images/sherpa-identity.jpg') }}" alt="">
+                <img src="{{ asset('images/sherpa-identity.jpg') }}" alt="" class="lg:w-11/12 lg:mx-auto xl:w-full">
             </div>
         </div>
     </div>

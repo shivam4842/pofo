@@ -1,5 +1,5 @@
 <footer class="py-14 lg:py-28 bg-black/85">
-    <div class="lg:max-w-6xl mx-auto px-2.5 sm:px-20 md:px-10"> 
+    <div class="lg:max-w-6xl mx-auto px-2.5 sm:px-20 md:px-10 xl:px-0"> 
         <div class="flex flex-col md:flex-row items-center justify-between gap-4">
             <div class="text-center md:text-left pb-4 lg:pb-0">
                 <h4 class="text-white text-xl md:text-2xl lg:text-3xl pb-2">Let's make something great together</h4>

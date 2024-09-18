@@ -179,9 +179,9 @@ $(document).ready(function () {
     pauseOnHover: false,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 1025,
         settings: {
-          slidesToShow: 2
+          slidesToShow: 3
         }
       },
       {
