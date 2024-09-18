@@ -167,7 +167,7 @@
 
 <section class="py-14">
     <div class="lg:max-w-6xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
             <div class="bg-[url('/public/images/counter-image.png')] bg-cover bg-center flex flex-col items-center justify-center p-20">
                 <div class="counter text-3xl pb-2 text-rose-600" data-target="13">0</div>
                 <img src="{{ asset('images/counter-logo1.png') }}" alt="">
@@ -187,7 +187,6 @@
         </div>
     </div>
 </section>
-
 <section class="py-14 md:py-20  lg:py-28">
     <div class="lg:max-w-6xl mx-auto">
         <div class="logo-slider mb-0">
@@ -214,6 +213,50 @@
             </div>
             <div class="cursor-ew-resize !flex items-center justify-center lg:justify-start">
                 <img src="{{ asset('images/wordpress.png') }}" alt=""> 
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-20 md:py-28 lg:py-40 bg-black/85 px-2.5 sm:px-20 md:px-10">
+    <div class="lg:max-w-7xl mx-auto">
+        <div class="relative">
+            <div class="static sm:absolute sm:-left-28 z-30 flex flex-col items-center lg:items-start gap-4 lg:gap-8  h-full justify-center text-stone-400/65 mb-6">
+                <button class="tablinks text-lg lg:text-[25px] hover:text-rose-600" onclick="openCity(event, 'tab-1')">Tailoring interior</button>
+                <button class="tablinks text-lg lg:text-[25px] hover:text-rose-600" onclick="openCity(event, 'tab-2')">Skoda corporate</button>
+                <button class="tablinks text-lg lg:text-[25px] hover:text-rose-600" onclick="openCity(event, 'tab-3')">Daimler financial</button>
+                <button class="tablinks text-lg lg:text-[25px] hover:text-rose-600" onclick="openCity(event, 'tab-4')">Basket shopping</button>
+                <button class="tablinks text-lg lg:text-[25px] hover:text-rose-600" onclick="openCity(event, 'tab-5')">Beautiful women</button>
+                <button class="tablinks text-lg lg:text-[25px] hover:text-rose-600" onclick="openCity(event, 'tab-6')">Feather pharmacy</button>
+                <button class="tablinks text-lg lg:text-[25px] hover:text-rose-600" onclick="openCity(event, 'tab-7')">Sherpa identity</button>
+            </div>
+
+            <div id="tab-1" class="tabcontent">
+                <img src="{{ asset('images/Tailoring-interior.jpg') }}" alt="">
+            </div>
+
+            <div id="tab-2" class="tabcontent">
+                <img src="{{ asset('images/Skoda-corporate.jpg') }}" alt="">
+            </div>
+
+            <div id="tab-3" class="tabcontent">
+                <img src="{{ asset('images/Daimler-financial.jpg') }}" alt="">
+            </div>
+
+            <div id="tab-4" class="tabcontent">
+                <img src="{{ asset('images/Basket-shopping.jpg') }}" alt="">
+            </div>
+
+            <div id="tab-5" class="tabcontent">
+                <img src="{{ asset('images/beautiful-women.jpg') }}" alt="">
+            </div>
+
+            <div id="tab-6" class="tabcontent">
+                <img src="{{ asset('images/feather-pharmacy.jpg') }}" alt=""> 
+            </div>
+
+            <div id="tab-7" class="tabcontent">
+                <img src="{{ asset('images/sherpa-identity.jpg') }}" alt="">
             </div>
         </div>
     </div>
