@@ -187,6 +187,36 @@
         </div>
     </div>
 </section>
+<section class="py-14 md:py-20  lg:py-28">
+    <div class="lg:max-w-6xl mx-auto">
+        <div class="logo-slider mb-0">
+            <div class="cursor-ew-resize !flex items-center justify-center lg:justify-start"> 
+                <img src="{{ asset('images/envato.png') }}" alt="">
+            </div>
+            <div class="cursor-ew-resize !flex items-center justify-center lg:justify-start"> 
+                <img src="{{ asset('images/jquery.png') }}" alt="">
+            </div>
+            <div class="cursor-ew-resize !flex items-center justify-center lg:justify-start"> 
+                <img src="{{ asset('images/less.png') }}" alt="">
+            </div>
+            <div class="cursor-ew-resize !flex items-center justify-center lg:justify-start">  
+                <img src="{{ asset('images/magneto.png') }}" alt="">
+            </div>
+            <div class="cursor-ew-resize !flex items-center justify-center lg:justify-start">
+                <img src="{{ asset('images/pingdom.png') }}" alt=""> 
+            </div>
+            <div class="cursor-ew-resize !flex items-center justify-center lg:justify-start"> 
+                <img src="{{ asset('images/sass.png') }}" alt=""> 
+            </div>
+            <div class="cursor-ew-resize !flex items-center justify-center lg:justify-start">
+                <img src="{{ asset('images/woocommerce.png') }}" alt=""> 
+            </div>
+            <div class="cursor-ew-resize !flex items-center justify-center lg:justify-start">
+                <img src="{{ asset('images/wordpress.png') }}" alt=""> 
+            </div>
+        </div>
+    </div>
+</section>
 
 <section class="py-20 md:py-28 lg:py-40 bg-black/85 px-2.5 sm:px-20 md:px-10">
     <div class="lg:max-w-7xl mx-auto">
