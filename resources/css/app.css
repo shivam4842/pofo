@@ -4,3 +4,52 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@keyframes openBox {
+    0% {
+        transform: scaleY(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scaleY(1); 
+        opacity: 1;
+    }
+}
+
+.openBox{
+    animation: openBox 1s ease-in-out forwards;
+    transform-origin: top;
+    overflow: hidden;
+}
+
+
+@keyframes fadeUp {
+    0% {
+        opacity: '0';
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: '1';
+        transform: translateY(0);
+    }
+  }
+  
+  .fadeUp {
+    animation: fadeUp 0.85s cubic-bezier(0.65, 0, 0.35, 1) both;
+  }
+
+
+@keyframes slide-right {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .slide-right {
+    animation: slide-right .5s ease-in-out;
+  }
+  

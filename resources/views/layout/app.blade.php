@@ -30,31 +30,43 @@ function loopSlider() {
     xx = setInterval(function() {
         switch (cont) {
             case 0: {
-                $("#slider-1 .bg-img").fadeOut(400);
-                $("#slider-2 .bg-img").delay(400).fadeIn(400);
+                $(".left-img-1").removeClass("opacity-100").addClass("opacity-0");
+                setTimeout(() => {
+                    $(".left-img-2").removeClass("opacity-0").addClass("opacity-100");
+                }, 400);
+                $("#slider-1").hide();
+                $("#slider-2").show();
                 $("#sButton1").removeClass("bg-white");
                 $("#sButton2").addClass("bg-white");
                 cont = 1;
                 break;
             }
             case 1: {
-                $("#slider-2 .bg-img").fadeOut(400);
-                $("#slider-3 .bg-img").delay(400).fadeIn(400);
+                $(".left-img-2").removeClass("opacity-100").addClass("opacity-0");
+                setTimeout(() => {
+                    $(".left-img-3").removeClass("opacity-0").addClass("opacity-100");
+                }, 400);
+                $("#slider-2").hide();
+                $("#slider-3").show();
                 $("#sButton2").removeClass("bg-white");
                 $("#sButton3").addClass("bg-white");
                 cont = 2;
                 break;
             }
             case 2: {
-                $("#slider-3 .bg-img").fadeOut(400);
-                $("#slider-1 .bg-img").delay(400).fadeIn(400);
+                $(".left-img-3").removeClass("opacity-100").addClass("opacity-0");
+                setTimeout(() => {
+                    $(".left-img-1").removeClass("opacity-0").addClass("opacity-100");
+                }, 400);
+                $("#slider-3").hide();
+                $("#slider-1").show();
                 $("#sButton3").removeClass("bg-white");
                 $("#sButton1").addClass("bg-white");
                 cont = 0;
                 break;
             }
         }
-    }, 8000);
+    }, 9000);
 }
 
 function reinitLoop(time) {
@@ -63,8 +75,12 @@ function reinitLoop(time) {
 }
 
 function sliderButton1() {
-    $("#slider-2, #slider-3").fadeOut(400);
-    $("#slider-1").delay(400).fadeIn(400);
+    $(".left-img-2, .left-img-3").removeClass("opacity-100").addClass("opacity-0");
+    setTimeout(() => {
+        $(".left-img-1").removeClass("opacity-0").addClass("opacity-100");
+    }, 300);
+    $("#slider-2, #slider-3").hide();
+    $("#slider-1").show();
     $("#sButton2, #sButton3").removeClass("bg-white");
     $("#sButton1").addClass("bg-white");
     reinitLoop(4000);
@@ -72,8 +88,12 @@ function sliderButton1() {
 }
 
 function sliderButton2() {
-    $("#slider-1, #slider-3").fadeOut(400);
-    $("#slider-2").delay(400).fadeIn(400);
+    $(".left-img-1, .left-img-3").removeClass("opacity-100").addClass("opacity-0");
+    setTimeout(() => {
+        $(".left-img-2").removeClass("opacity-0").addClass("opacity-100");
+    }, 300);
+    $("#slider-1, #slider-3").hide();
+    $("#slider-2").show();
     $("#sButton1, #sButton3").removeClass("bg-white");
     $("#sButton2").addClass("bg-white");
     reinitLoop(4000);
@@ -81,8 +101,12 @@ function sliderButton2() {
 }
 
 function sliderButton3() {
-    $("#slider-1, #slider-2").fadeOut(400);
-    $("#slider-3").delay(400).fadeIn(400);
+    $(".left-img-1, .left-img-2").removeClass("opacity-100").addClass("opacity-0");
+    setTimeout(() => {
+        $(".left-img-3").removeClass("opacity-0").addClass("opacity-100");
+    }, 300);
+    $("#slider-1, #slider-2").hide();
+    $("#slider-3").show();
     $("#sButton1, #sButton2").removeClass("bg-white");
     $("#sButton3").addClass("bg-white");
     reinitLoop(4000);
@@ -90,10 +114,12 @@ function sliderButton3() {
 }
 
 $(window).ready(function() {
+    $(".left-img-2, .left-img-3").addClass("opacity-0");
     $("#slider-2, #slider-3").hide();
     $("#sButton1").addClass("bg-white");
     loopSlider();
 });
+
 
 
 
