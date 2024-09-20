@@ -49,34 +49,36 @@
             </div>
         </div>
     </header>
-    <div id="slider-1" class="h-full">
-        <div class="bg-img-1 bg-[url('/public/images/homepage1.jpg')] bg-center sm:bg-cover md:bg-left xl:bg-right flex flex-col items-start justify-end md:justify-center h-full ">
-            <img src="{{ asset('images/homepage-option1.jpg') }}" alt="" class="left-img-1 transition-opacity duration-1000 ease-in-out opacity-100 md:w-1/2 lg:w-1/5 h-full hidden sm:block sm:absolute sm:left-36  md:static">
-            <div class="bg-white absolute top-80 sm:top-20 md:top-auto left-8  sm:left-40 lg:left-11 xl:left-52 p-8 lg:p-20 pb-8 lg:pl-24 w-10/12 sm:w-1/2 md:w-7/12 lg:w-3/5 xl:w-1/3 text-center lg:text-left  transition-transform duration-1000 ease-in-out openBox">
-                <p class="underline text-red-600 uppercase text-xs lg:text-sm font-semibold tracking-wider font-montserrat transition-transform duration-700 ease-in-out fadeUp">Good design is honest</p>
-                <h1 class="text-neutral-800 text-3xl lg:text-[55px] leading-tight lg:leading-none text-balance pt-4 -tracking-wider pb-16 lg:pb-10  font-montserrat font-medium transition-transform duration-700 ease-in-out fadeUp">We move the <span class="font-bold">digital industry</span></h1>
-                <a href="#" class="font-montserrat font-bold uppercase text-xs absolute bottom-8 lg:bottom-0 right-1/4 md:right-1/3 lg:right-0 py-3 px-5 lg:py-5 lg:px-9 bg-black text-white">Project details</a>
+    <div id="slider-1" class="h-full bg-black">
+        <div class="flex flex-col md:flex-row h-full">
+            <img src="{{ asset('images/homepage-option1.jpg') }}" alt="" class="left-img-1 transition-opacity duration-1000 ease-in-out opacity-100 hidden md:block w-full md:w-1/2 lg:w-1/2 xl:w-1/4">
+            <img src="{{ asset('images/homepage1.jpg') }}" alt="" class="w-full md:w-1/2 lg:w-1/2 xl:w-3/4 object-none lg:object-cover slide-right h-screen lg:h-auto">
+            <div class="bg-white absolute top-80 left-8 sm:left-40 lg:left-11 xl:left-52 p-8 lg:p-20 pb-8 lg:pl-24 w-10/12 sm:w-1/2 md:w-7/12 lg:w-3/5 xl:w-1/3 text-center lg:text-left openBox">
+                <p class="underline text-red-600 uppercase text-xs lg:text-sm font-semibold tracking-wider font-montserrat showContent">Good design is honest</p>
+                <h1 class="text-neutral-800 text-3xl lg:text-[55px] leading-tight lg:leading-none text-balance pt-4 -tracking-wider pb-16 lg:pb-10  font-montserrat font-medium showContent">We move the <span class="font-bold">digital industry</span></h1>
+                <a href="#" class="font-montserrat font-bold uppercase text-xs absolute bottom-8 lg:bottom-0 right-1/4 md:right-1/3 lg:right-0 py-3 px-5 lg:py-5 lg:px-9 bg-black text-white downToUpContent ">Project details</a>
             </div>
         </div>
     </div>
-    <div id="slider-2" class="h-full">
-        <div class="bg-img-2 bg-[url('/public/images/homepage2.jpg')] bg-center sm:bg-cover md:bg-left xl:bg-right flex flex-col items-start justify-end md:justify-center h-full">
-            <img src="{{ asset('images/homepage-option2.jpg') }}" alt="" class="left-img-2 transition-opacity duration-1000 ease-in-out opacity-0 md:w-1/2 lg:w-1/5 h-full hidden sm:block sm:absolute sm:left-36 md:static">
-            <div class="bg-white absolute top-80 sm:top-20 md:top-auto left-8 sm:left-40 lg:left-11 xl:left-52 p-8 lg:p-20 pb-8 lg:pl-24 w-10/12 sm:w-1/2 md:w-7/12 lg:w-3/5 xl:w-1/3 text-center lg:text-left
-            transition-transform duration-1000 ease-in-out openBox">
-                <p class="underline text-orange-600 uppercase text-xs lg:text-sm font-semibold tracking-wider font-montserrat transition-transform duration-700 ease-in-out fadeUp">Good design is honest</p>
-                <h1 class="text-neutral-800 text-3xl lg:text-[55px] leading-tight lg:leading-none text-balance pt-4 -tracking-wider pb-16 lg:pb-10  font-montserrat font-medium transition-transform duration-700 ease-in-out fadeUp">We do things <span class="font-bold">differently</span></h1>
-                <a href="#" class="font-montserrat font-bold uppercase text-xs absolute bottom-8 lg:bottom-0 right-1/4 md:right-1/3 lg:right-0 py-3 px-5 lg:py-5 lg:px-9 bg-black text-white">Project details</a>
+    <div id="slider-2" class="h-full bg-black">
+        <div class="flex flex-col md:flex-row h-full">
+            <img src="{{ asset('images/homepage-option2.jpg') }}" alt="" class="left-img-2 transition-opacity duration-1000 ease-in-out opacity-0 hidden md:block w-full md:w-1/2 lg:w-1/2 xl:w-1/4">
+            <img src="{{ asset('images/homepage2.jpg') }}" alt="" class="w-full md:w-1/2 lg:w-1/2 xl:w-3/4 object-none lg:object-cover slide-right h-screen lg:h-auto">
+            <div class="bg-white absolute top-80 left-8 sm:left-40 lg:left-11 xl:left-52 p-8 lg:p-20 pb-8 lg:pl-24 w-10/12 sm:w-1/2 md:w-7/12 lg:w-3/5 xl:w-1/3 text-center lg:text-left openBox">
+                <p class="underline text-orange-600 uppercase text-xs lg:text-sm font-semibold tracking-wider font-montserrat showContent">Good design is honest</p>
+                <h1 class="text-neutral-800 text-3xl lg:text-[55px] leading-tight lg:leading-none text-balance pt-4 -tracking-wider pb-16 lg:pb-10  font-montserrat font-medium showContent">We do things <span class="font-bold">differently</span></h1>
+                <a href="#" class="font-montserrat font-bold uppercase text-xs absolute bottom-8 lg:bottom-0 right-1/4 md:right-1/3 lg:right-0 py-3 px-5 lg:py-5 lg:px-9 bg-black text-white downToUpContent ">Project details</a>
             </div>
         </div>
     </div>
-    <div id="slider-3" class="h-full">
-        <div class="bg-img-3 bg-[url('/public/images/homepage3.jpg')] bg-center sm:bg-cover md:bg-left xl:bg-right flex flex-col items-start justify-end md:justify-center h-full">
-            <img src="{{ asset('images/homepage-option3.jpg') }}" alt="" class="left-img-3 transition-opacity duration-1000 ease-in-out opacity-0 md:w-1/2 lg:w-1/5 h-full hidden sm:block sm:absolute sm:left-36 md:static">
-            <div class="bg-white absolute top-80 sm:top-20 md:top-auto left-8 sm:left-40 lg:left-11 xl:left-52 p-8 lg:p-20 pb-8 lg:pl-24 w-10/12 sm:w-1/2 md:w-7/12 lg:w-3/5 xl:w-1/3 text-center lg:text-left transition-transform duration-1000 ease-in-out openBox">
-                <p class="underline text-[#C92C0C] uppercase text-xs lg:text-sm font-semibold tracking-wider font-montserrat transition-transform duration-700 ease-in-out fadeUp">Good design is honest</p>
-                <h1 class="text-neutral-800 text-3xl lg:text-[55px] leading-tight lg:leading-none text-balance pt-4 -tracking-wider pb-16 lg:pb-10  font-montserrat font-medium transition-transform duration-700 ease-in-out fadeUp">We move the, <span class="font-bold">but significant</span></h1>
-                <a href="#" class="font-montserrat font-bold uppercase text-xs absolute bottom-8 lg:bottom-0 right-1/4 md:right-1/3 lg:right-0 py-3 px-5 lg:py-5 lg:px-9 bg-black text-white">Project details</a>
+    <div id="slider-3" class="h-full bg-black">
+        <div class="flex flex-col md:flex-row h-full">
+            <img src="{{ asset('images/homepage-option3.jpg') }}" alt="" class="left-img-3 transition-opacity duration-1000 ease-in-out opacity-0 hidden md:block w-full md:w-1/2 lg:w-1/2 xl:w-1/4">
+            <img src="{{ asset('images/homepage3.jpg') }}" alt="" class="w-full md:w-1/2 lg:w-1/2 xl:w-3/4 object-none lg:object-cover slide-right h-screen lg:h-auto">
+            <div class="bg-white absolute top-80 left-8 sm:left-40 lg:left-11 xl:left-52 p-8 lg:p-20 pb-8 lg:pl-24 w-10/12 sm:w-1/2 md:w-7/12 lg:w-3/5 xl:w-1/3 text-center lg:text-left openBox">
+                <p class="underline text-[#C92C0C] uppercase text-xs lg:text-sm font-semibold tracking-wider font-montserrat showContent">Good design is honest</p>
+                <h1 class="text-neutral-800 text-3xl lg:text-[55px] leading-tight lg:leading-none text-balance pt-4 -tracking-wider pb-16 lg:pb-10  font-montserrat font-medium showContent">We move the, <span class="font-bold">but significant</span></h1>
+                <a href="#" class="font-montserrat font-bold uppercase text-xs absolute bottom-8 lg:bottom-0 right-1/4 md:right-1/3 lg:right-0 py-3 px-5 lg:py-5 lg:px-9 bg-black text-white downToUpContent ">Project details</a>
             </div>
         </div>
     </div>

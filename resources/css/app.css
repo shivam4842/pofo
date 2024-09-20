@@ -23,26 +23,55 @@
     overflow: hidden;
 }
 
-
-@keyframes fadeUp {
+@keyframes showContent {
     0% {
-        opacity: '0';
-        transform: translateY(-100%);
+        opacity: 0;
+        transform: translateY(-20px);
     }
     100% {
-        opacity: '1';
+        opacity: 1;
         transform: translateY(0);
     }
+}  
+
+  .showContent{
+    opacity: 0;
+    animation: showContent 1s ease-in-out forwards;
   }
-  
-  .fadeUp {
-    animation: fadeUp 0.85s cubic-bezier(0.65, 0, 0.35, 1) both;
+
+.showContent:nth-child(1) {
+    animation-delay: 1.2s; /* Delays after the box opens */
+}
+
+.showContent:nth-child(2) {
+    animation-delay: 1.8s;
+}
+
+@keyframes downToUpContent {
+  0% {
+      opacity: 0;
+      transform: translateY(30px);
+      
   }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}  
+
+.downToUpContent{
+  opacity: 0;
+  animation: downToUpContent 1s ease-in-out forwards;
+}
+.downToUpContent:nth-child(3) {
+  animation-delay: 2s;
+}
+
 
 
 @keyframes slide-right {
     0% {
-      transform: translateX(-100%);
+      transform: translateX(-10%);
     }
     100% {
       transform: translateX(0);
@@ -51,5 +80,6 @@
 
   .slide-right {
     animation: slide-right .5s ease-in-out;
+    /* animation-delay: 1s; */
   }
   
