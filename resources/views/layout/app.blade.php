@@ -32,7 +32,7 @@ function loopSlider() {
             case 0: {
                 $(".left-img-1").removeClass("opacity-100").addClass("opacity-0");
                 setTimeout(() => {
-                    $(".left-img-2").removeClass("opacity-0").addClass("opacity-100");
+                    $(".left-img-2").removeClass("opacity-0").addClass("opacity-100 delay-300");
                 }, 400);
                 $("#slider-1").hide();
                 $("#slider-2").show();
@@ -44,7 +44,7 @@ function loopSlider() {
             case 1: {
                 $(".left-img-2").removeClass("opacity-100").addClass("opacity-0");
                 setTimeout(() => {
-                    $(".left-img-3").removeClass("opacity-0").addClass("opacity-100");
+                    $(".left-img-3").removeClass("opacity-0").addClass("opacity-100 delay-300");
                 }, 400);
                 $("#slider-2").hide();
                 $("#slider-3").show();
@@ -56,7 +56,7 @@ function loopSlider() {
             case 2: {
                 $(".left-img-3").removeClass("opacity-100").addClass("opacity-0");
                 setTimeout(() => {
-                    $(".left-img-1").removeClass("opacity-0").addClass("opacity-100");
+                    $(".left-img-1").removeClass("opacity-0").addClass("opacity-100 delay-300");
                 }, 400);
                 $("#slider-3").hide();
                 $("#slider-1").show();
@@ -77,7 +77,7 @@ function reinitLoop(time) {
 function sliderButton1() {
     $(".left-img-2, .left-img-3").removeClass("opacity-100").addClass("opacity-0");
     setTimeout(() => {
-        $(".left-img-1").removeClass("opacity-0").addClass("opacity-100");
+        $(".left-img-1").removeClass("opacity-0").addClass("opacity-100 delay-300");
     }, 300);
     $("#slider-2, #slider-3").hide();
     $("#slider-1").show();
@@ -90,7 +90,7 @@ function sliderButton1() {
 function sliderButton2() {
     $(".left-img-1, .left-img-3").removeClass("opacity-100").addClass("opacity-0");
     setTimeout(() => {
-        $(".left-img-2").removeClass("opacity-0").addClass("opacity-100");
+        $(".left-img-2").removeClass("opacity-0").addClass("opacity-100 delay-300");
     }, 300);
     $("#slider-1, #slider-3").hide();
     $("#slider-2").show();
@@ -103,7 +103,7 @@ function sliderButton2() {
 function sliderButton3() {
     $(".left-img-1, .left-img-2").removeClass("opacity-100").addClass("opacity-0");
     setTimeout(() => {
-        $(".left-img-3").removeClass("opacity-0").addClass("opacity-100");
+        $(".left-img-3").removeClass("opacity-0").addClass("opacity-100 delay-300");
     }, 300);
     $("#slider-1, #slider-2").hide();
     $("#slider-3").show();
